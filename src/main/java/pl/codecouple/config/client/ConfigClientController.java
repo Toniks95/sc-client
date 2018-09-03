@@ -15,17 +15,17 @@ public class ConfigClientController {
     @Value("${info.property}")
     private String property;
 
-    @Value("${info.encrypted.property}")
-    private String encrypted;
+ //   @Value("${info.encrypted.property}")
+//    private String encrypted;
 
     @GetMapping("/message")
     String property() {
         return property;
     }
 
-    @GetMapping("/decrypted")
-    String decrypted() {
-        return encrypted;
-    }
+ //   @GetMapping("/decrypted")
+ //   String decrypted() {
+ //       return encrypted;
+ //   }
 
 }
